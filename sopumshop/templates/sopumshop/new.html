@@ -1,0 +1,14 @@
+{% extends 'sopumshop/base.html' %}
+{% block content %}
+{% load static %}
+
+
+<h3>소품샵 소개</h3><br>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+
+{% endblock %}

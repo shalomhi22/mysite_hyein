@@ -1,0 +1,28 @@
+{% extends 'sopumshop/base.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="posts">
+    <h3>{{ post.name }}</h3>
+    <p>위치 : {{ post.location }}</p>
+</div>
+
+<a href="{% url 'edit' index=post.pk %}">수정하기</a><br>
+
+
+<a href="{% url 'delete' pk=post.pk %}">삭제하기</a>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="text">
+    <button type="submit">코멘트 달기</button>
+</form>
+
+{% for comment in comment_list %}
+<p>{{ comment.text }}</p>
+<a href="{% url 'delete_comment' pk=post.pk comment_pk=comment.pk %}">코멘트 삭제</a>
+{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,83 @@
+@font-face { 
+    font-family: 'MapoBackpacking'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoBackpackingA.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face { 
+    font-family: 'UhBeeMiMi'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeMiMi.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+*{ 
+    font-family: 'UhBeeMiMi', sans-serif;
+}
+.nav-fix{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+.main-fix{
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.navbar-img{
+    background-image: url(../img/pattern.jpg);
+    background-size: contain;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+#home-img1{
+    background-image: url(../img/home1.jpg);
+}
+#home-img2{
+    background-image: url(../img/home2.jpg);
+}
+#home-img3{
+    background-image: url(../img/home3.jpg);
+}
+.home-img-display{
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.posting-header{
+    padding: 120px 0;
+    text-align: center;
+}
+.posting-en{
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 3;
+}
+.posing-h{
+    font-size: 2.7em;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-img-display {
+        height: 60vh;
+    }
+    .home-caption-display{
+        top: 20%;
+    }
+    .posting-header{
+        padding: 70px 0;
+    }
+    .home-caption-display h1{
+        font-size: 2.7em;
+    }
+    .home-caption-display p{
+        font-size: 1.6em;
+    }
+    .posting-h{
+        font-size: 2em;
+    }
+}
