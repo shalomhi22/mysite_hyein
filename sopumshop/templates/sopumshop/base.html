@@ -35,6 +35,15 @@
                   </ul>
                 </div>
               </nav>
+              <div class="login">
+                {% if user.is_authenticated %}
+                <span>{{ user.username }}님 &nbsp; </span>
+                <a href="{% url 'logout' %}">로그아웃</a>
+                {% else %}
+                <a href="{% url 'login' %}">로그인 &nbsp;</a>
+                <a href="{% url 'register' %}">회원가입</a>
+                {% endif %}
+              </div>
         </header>
         <main class="main-fix">
         {% block content %}

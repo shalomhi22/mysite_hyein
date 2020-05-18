@@ -13,6 +13,24 @@
 *{ 
     font-family: 'UhBeeMiMi', sans-serif;
 }
+/* detail */
+.posts {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.postImg {
+    width: 50px;
+}
+
+/* base */
+.login{
+    position: relative;
+    top: 5px;
+    left: 90%;
+    margin-bottom: 15px;
+}
+
+/* 부트스트랩 */
 .nav-fix{
     position: fixed;
     left: 0;
@@ -48,7 +66,7 @@
 }
 
 .posting-header{
-    padding: 120px 0;
+    padding: 50px 0;
     text-align: center;
 }
 .posting-en{
